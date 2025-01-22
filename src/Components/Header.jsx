@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <span>Sanskruti</span>
+          <span>ahire</span>
         </div>
         <nav className="nav-links">
           <ul>
