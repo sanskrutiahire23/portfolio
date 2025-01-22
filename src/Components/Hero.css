@@ -1,0 +1,125 @@
+.hero {
+     
+    color: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-container {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text .highlight {
+    color: #64ffda;
+  }
+  
+  .hero-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .status {
+    font-size: 16px;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #64ffda;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    font-size: 20px;
+    color: white;
+    margin-right: 15px;
+  }
+  
+  .social-links a:hover {
+    color: #64ffda;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+  }
+  
+  .hero-image img {
+    border-radius: 510px;
+    width: 510px;
+    height: 510px;
+    object-fit: cover;
+    border: 5px solid #0a0a0a;
+  }
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    color: rgb(237, 155, 155);
+    font-size: 24px;
+    transition: color 0.3s;
+     
+  }
+  
+  .social-icon:hover {
+    color: #64ffda;
+  }  
+  .hero-text .highlight {
+    display: inline-block;
+    color: #64ffda; 
+  }
+  
+  .hero-text .highlight span {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: letterAnimation 0.5s forwards;
+    animation-delay: calc(0.1s * var(--i));
+  } 
+  .hero-text .highlight {
+    display: inline-block;
+  }
+  
+  .hero-text .highlight span {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: letterAnimation 0.3s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i)); /* Stagger the delay for each letter */
+  }
+  
+  @keyframes letterAnimation {
+    0%, 100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-10px);
+    }
+  }
+  

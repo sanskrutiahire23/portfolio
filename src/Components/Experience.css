@@ -1,0 +1,73 @@
+.experience-section {
+  text-align: center;
+  color: #e0e0e0;
+  padding: 50px;
+}
+
+.experience-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #94f4dd;
+}
+
+.experience-grid {
+  display: grid;
+  place-items: center; /* Centers the card horizontally and vertically */
+  gap: 20px;
+  justify-content: center;
+}
+
+.experience-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease;
+  width: 100%; /* Ensures the card adapts to available space */
+  max-width: 400px; /* Limits the card width */
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(93, 247, 209, 0.6);
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4ff54f; /* Light green for the company name */
+  margin-right: 15px;
+}
+
+.experience-card h3 {
+  margin: 0 15px;
+  font-size: 1.2rem;
+  color: #64ffda;
+  flex-grow: 1;
+}
+
+.experience-card span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.experience-card ul {
+  margin: 10px 0 0;
+  padding: 0 15px;
+  list-style: disc;
+  color: #b0b0b0;
+}
+
+.experience-card ul li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
