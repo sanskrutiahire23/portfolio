@@ -1,6 +1,6 @@
 .header {
   background-color: #12171e;
-  padding: 10px 0; /* Reduce vertical padding */
+  padding: 10px 0; /* Reduce vertical padding for the header */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,12 +20,14 @@
   font-size: 20px; /* Slightly smaller font size for the logo */
   font-weight: bold;
   color: #64ffda;
+  margin-bottom: 0; /* Remove any default bottom margin */
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 20px; /* Reduce space between navigation links */
+  margin-top: 0; /* Ensure no extra spacing above */
 }
 
 .nav-links ul {
@@ -59,7 +61,7 @@
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 20px; /* Reduce space between links and button */
+  margin-left: 20px; /* Space between links and button */
   white-space: nowrap; /* Prevents the button text from wrapping */
   font-size: 14px; /* Slightly smaller font size for the button */
 }
@@ -76,21 +78,21 @@
     text-align: center; /* Center text */
   }
 
+  .logo {
+    margin-bottom: 10px; /* Add a smaller space between logo and nav links */
+    font-size: 18px; /* Slightly smaller font size for logo */
+  }
+
   .nav-links {
     flex-direction: column; /* Stack navbar links vertically */
-    gap: 15px; /* Reduce gap for spacing between navbar links */
-    margin-top: 15px; /* Add space between the resume button and navbar links */
+    gap: 15px; /* Adjust gap for spacing between navbar links */
+    margin-top: 0; /* Remove unnecessary top margin */
   }
 
   .btn-download-cv {
     margin-left: 0; /* Remove margin on smaller screens */
-    margin-top: 15px; /* Add space between resume button and navbar links */
+    margin-top: 10px; /* Adjust space between resume button and navbar links */
     font-size: 12px; /* Slightly smaller font size for smaller screens */
-  }
-
-  .logo {
-    margin-bottom: 15px; /* Add space between logo and resume button */
-    font-size: 18px; /* Slightly smaller font size for logo */
   }
 }
 
@@ -103,12 +105,16 @@
 
   .nav-links {
     flex-direction: row; /* Align navbar links horizontally */
-    gap: 20px; /* Reduce gap between links */
+    gap: 20px; /* Maintain consistent gap */
   }
 
   .btn-download-cv {
-    margin-left: 20px; /* Reduce space between navbar links and button */
+    margin-left: 20px; /* Adjust space between navbar links and button */
     font-size: 14px; /* Standard font size for larger screens */
     margin-top: 0; /* Remove top margin */
   }
 }
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling across the page */
+}
+
