@@ -1,6 +1,6 @@
 .header {
   background-color: #12171e;
-  padding: 20px 0;
+  padding: 10px 20px; /* Adjusted padding for better responsiveness */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,18 +22,23 @@
   font-size: 24px;
   font-weight: bold;
   color: #64ffda;
+  white-space: nowrap; /* Prevents text from breaking */
 }
 
 .nav-links ul {
   list-style: none;
   display: flex;
-  gap: 70px;
+  flex-wrap: wrap; /* Allows wrapping if space is limited */
+  gap: 30px; /* Spacing between links */
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
@@ -53,49 +58,56 @@
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .btn-download-cv:hover {
   background: #52e0c4;
 }
 
-/* Responsive Styles */
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Ensure items remain horizontal */
+    flex-wrap: wrap; /* Allow items to wrap efficiently if necessary */
   }
 
   .nav-links ul {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
+    justify-content: space-evenly; /* Evenly distribute links */
+    gap: 20px;
   }
 
   .nav-links a {
-    font-size: 14px;
-  }
-
-  .actions {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo {
-    font-size: 20px;
-  }
-
-  .nav-links ul {
-    gap: 10px;
-  }
-
-  .nav-links a {
-    font-size: 13px;
+    font-size: 14px; /* Slightly smaller text on smaller screens */
   }
 
   .btn-download-cv {
     padding: 6px 12px;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links ul {
+    flex-wrap: wrap; /* Links wrap onto the next line if needed */
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 12px; /* Smaller font for smaller screens */
+  }
+
+  .btn-download-cv {
+    padding: 5px 10px;
+    font-size: 12px;
   }
 }
