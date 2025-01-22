@@ -1,7 +1,7 @@
 .projects-section {
   text-align: center;
   color: #e0e0e0;
-  padding: 50px 20px; /* Added padding for smaller screens */
+  padding: 50px 20px; /* Add padding for smaller screens */
 }
 
 .projects-section h2 {
@@ -12,9 +12,10 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min size for better responsiveness */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
   gap: 20px;
   justify-content: center;
+  align-items: stretch; /* Ensure cards align uniformly */
 }
 
 .project-card {
@@ -28,18 +29,17 @@
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(93, 247, 209, 0.6); /* Enhanced hover effect */
+  box-shadow: 0 4px 8px rgba(93, 247, 209, 0.6);
 }
 
 .project-card img {
   width: 100%;
-  height: 250px; /* Reduced height for consistency */
-  object-fit: cover;
-  border-bottom: 2px solid #64ffda; /* Added a border for visual separation */
+  height: 250px; /* Consistent height for all images */
+  object-fit: cover; /* Ensures images are cropped consistently */
 }
 
 .project-card h3 {
-  margin: 15px 20px 10px;
+  margin: 15px 20px;
   font-size: 1.5rem;
   color: #64ffda;
 }
@@ -51,14 +51,14 @@
   text-align: justify;
 }
 
-/* Media Queries for Responsive Design */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .projects-section {
-    padding: 40px 15px; /* Adjust padding for smaller screens */
+    padding: 30px 10px; /* Reduced padding on smaller screens */
   }
 
   .projects-section h2 {
-    font-size: 2rem; /* Slightly smaller heading on tablets */
+    font-size: 2rem; /* Smaller heading font */
   }
 
   .project-card img {
@@ -66,28 +66,20 @@
   }
 
   .project-card h3 {
-    font-size: 1.3rem; /* Reduced font size for better scaling */
+    font-size: 1.2rem; /* Smaller font for project titles */
   }
 
   .project-card p {
-    font-size: 0.95rem; /* Slightly smaller text for compactness */
+    font-size: 0.9rem; /* Slightly smaller font for descriptions */
   }
 }
 
 @media (max-width: 480px) {
-  .projects-section h2 {
-    font-size: 1.8rem; /* Smaller heading for mobile screens */
-  }
-
   .project-card img {
-    height: 180px; /* Compact image for mobiles */
+    height: 180px; /* Further adjustment for very small screens */
   }
 
-  .project-card h3 {
-    font-size: 1.2rem; /* Adjust heading size */
-  }
-
-  .project-card p {
-    font-size: 0.9rem; /* Compact paragraph text */
+  .projects-grid {
+    gap: 15px; /* Reduce grid gap on small screens */
   }
 }
