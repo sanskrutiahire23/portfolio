@@ -67,19 +67,46 @@
   background: #52e0c4;
 }
 
-/* Media Query for Small Screens */
+/* Media Query for Small Screens (Mobile) */
 @media (max-width: 768px) {
   .container {
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: center; /* Center-align items on small screens */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center-align items */
+    text-align: center; /* Center text */
   }
 
-  .nav-links ul {
-    gap: 15px; /* Reduce spacing on smaller screens */
+  .nav-links {
+    flex-direction: column; /* Stack navbar links vertically */
+    gap: 20px; /* Increase gap for spacing between navbar links */
+    margin-top: 20px; /* Add space between the resume button and navbar links */
   }
 
   .btn-download-cv {
-    margin-left: 15px; /* Adjust spacing for the button */
-    font-size: 14px; /* Slightly smaller font for smaller screens */
+    margin-left: 0; /* Remove margin on smaller screens */
+    margin-top: 20px; /* Add space between resume button and navbar links */
+    font-size: 14px; /* Slightly smaller font size for smaller screens */
+  }
+
+  .logo {
+    margin-bottom: 20px; /* Add space between logo and resume button */
+  }
+}
+
+/* Media Query for Larger Screens (Laptop/Tablet) */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Align items horizontally */
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    flex-direction: row; /* Align navbar links horizontally */
+    gap: 30px; /* Maintain standard gap between links */
+  }
+
+  .btn-download-cv {
+    margin-left: 30px; /* Space between navbar links and button */
+    font-size: 16px; /* Standard font size for larger screens */
+    margin-top: 0; /* Remove top margin */
   }
 }
