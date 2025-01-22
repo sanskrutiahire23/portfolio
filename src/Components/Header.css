@@ -1,9 +1,6 @@
 .header {
   background-color: #12171e;
-  padding: 10px 20px; /* Adjusted padding for better responsiveness */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 20px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -16,29 +13,34 @@
   align-items: center;
   max-width: 1200px;
   width: 90%;
+  margin: 0 auto;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: #64ffda;
-  white-space: nowrap; /* Prevents text from breaking */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Space between navigation links */
 }
 
 .nav-links ul {
   list-style: none;
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping if space is limited */
-  gap: 30px; /* Spacing between links */
-  padding: 0;
+  gap: 30px;
   margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -48,7 +50,6 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 
 .btn-download-cv {
@@ -58,56 +59,27 @@
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  margin-left: 30px; /* Space between links and button */
+  white-space: nowrap; /* Prevents the button text from wrapping */
 }
 
 .btn-download-cv:hover {
   background: #52e0c4;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Query for Small Screens */
 @media (max-width: 768px) {
   .container {
-    flex-direction: row; /* Ensure items remain horizontal */
-    flex-wrap: wrap; /* Allow items to wrap efficiently if necessary */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center-align items on small screens */
   }
 
   .nav-links ul {
-    justify-content: space-evenly; /* Evenly distribute links */
-    gap: 20px;
-  }
-
-  .nav-links a {
-    font-size: 14px; /* Slightly smaller text on smaller screens */
+    gap: 15px; /* Reduce spacing on smaller screens */
   }
 
   .btn-download-cv {
-    padding: 6px 12px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    justify-content: space-between;
-    padding: 0 10px;
-  }
-
-  .logo {
-    font-size: 20px;
-  }
-
-  .nav-links ul {
-    flex-wrap: wrap; /* Links wrap onto the next line if needed */
-    gap: 15px;
-  }
-
-  .nav-links a {
-    font-size: 12px; /* Smaller font for smaller screens */
-  }
-
-  .btn-download-cv {
-    padding: 5px 10px;
-    font-size: 12px;
+    margin-left: 15px; /* Adjust spacing for the button */
+    font-size: 14px; /* Slightly smaller font for smaller screens */
   }
 }
