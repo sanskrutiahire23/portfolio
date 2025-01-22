@@ -9,8 +9,9 @@
 
 .container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Stack items vertically by default */
   align-items: center;
+  justify-content: center;
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
@@ -20,12 +21,14 @@
   font-size: 24px;
   font-weight: bold;
   color: #64ffda;
+  margin-bottom: 10px; /* Space between logo and resume button */
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 30px; /* Space between navigation links */
+  margin-top: 20px; /* Space between nav links and the resume button */
 }
 
 .nav-links ul {
@@ -50,6 +53,7 @@
 .actions {
   display: flex;
   align-items: center;
+  margin-bottom: 15px; /* Space between the resume button and navbar links */
 }
 
 .btn-download-cv {
@@ -59,7 +63,6 @@
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-  margin-left: 30px; /* Space between links and button */
   white-space: nowrap; /* Prevents the button text from wrapping */
 }
 
@@ -67,19 +70,28 @@
   background: #52e0c4;
 }
 
-/* Media Query for Small Screens */
-@media (max-width: 768px) {
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
   .container {
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: center; /* Center-align items on small screens */
+    flex-direction: row; /* Align items horizontally on larger screens */
+    justify-content: space-between;
   }
 
-  .nav-links ul {
-    gap: 15px; /* Reduce spacing on smaller screens */
+  .actions {
+    margin-bottom: 0; /* Remove margin on larger screens */
+  }
+
+  .logo {
+    margin-bottom: 0; /* Remove bottom margin on larger screens */
+  }
+
+  .nav-links {
+    margin-top: 0; /* Remove top margin for nav links */
   }
 
   .btn-download-cv {
-    margin-left: 15px; /* Adjust spacing for the button */
-    font-size: 14px; /* Slightly smaller font for smaller screens */
+    margin-left: 30px; /* Space between links and button */
+    font-size: 16px; /* Standard font size for larger screens */
   }
 }
+
