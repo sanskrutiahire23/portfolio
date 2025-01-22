@@ -27,7 +27,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 25px; /* Space between navigation links */
+  gap: 30px; /* Space between navigation links */
   margin-top: 20px; /* Space between nav links and the resume button */
 }
 
