@@ -1,6 +1,6 @@
 .header {
   background-color: #12171e;
-  padding: 10px 0; /* Reduce vertical padding for the header */
+  padding: 10px 0; /* Compact vertical padding */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -17,23 +17,23 @@
 }
 
 .logo {
-  font-size: 20px; /* Slightly smaller font size for the logo */
+  font-size: 20px; /* Compact font size for logo */
   font-weight: bold;
   color: #64ffda;
-  margin-bottom: 0; /* Remove any default bottom margin */
+  margin-bottom: 0; /* Ensure no extra spacing below */
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px; /* Reduce space between navigation links */
-  margin-top: 0; /* Ensure no extra spacing above */
+  gap: 20px; /* Compact spacing between nav links */
+  margin-top: 0; /* Avoid unnecessary top margin */
 }
 
 .nav-links ul {
   list-style: none;
   display: flex;
-  gap: 20px; /* Reduce space between links */
+  gap: 20px; /* Compact spacing for horizontal links */
   margin: 0;
   padding: 0;
 }
@@ -41,7 +41,7 @@
 .nav-links a {
   color: white;
   text-decoration: none;
-  font-size: 14px; /* Slightly smaller font size for navigation links */
+  font-size: 14px; /* Compact font size for links */
   transition: color 0.3s ease;
 }
 
@@ -55,15 +55,15 @@
 }
 
 .btn-download-cv {
-  padding: 6px 12px; /* Reduce padding of the button */
+  padding: 6px 12px; /* Compact padding for the button */
   background: #64ffda;
   color: #0a192f;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
   margin-left: 20px; /* Space between links and button */
-  white-space: nowrap; /* Prevents the button text from wrapping */
-  font-size: 14px; /* Slightly smaller font size for the button */
+  white-space: nowrap;
+  font-size: 14px; /* Compact font size */
 }
 
 .btn-download-cv:hover {
@@ -73,30 +73,30 @@
 /* Media Query for Small Screens (Mobile) */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: center; /* Center-align items */
-    text-align: center; /* Center text */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items */
+    text-align: center;
   }
 
   .logo {
-    margin-bottom: 10px; /* Add a smaller space between logo and nav links */
-    font-size: 18px; /* Slightly smaller font size for logo */
+    margin-bottom: 10px; /* Add minimal spacing below logo */
+    font-size: 18px; /* Slightly smaller logo for small screens */
   }
 
   .nav-links {
-    flex-direction: column; /* Stack navbar links vertically */
-    gap: 15px; /* Adjust gap for spacing between navbar links */
-    margin-top: 0; /* Remove unnecessary top margin */
+    flex-direction: column; /* Stack nav links vertically */
+    gap: 15px; /* Compact spacing for stacked nav links */
+    margin-top: 10px; /* Small gap above nav links */
   }
 
   .btn-download-cv {
-    margin-left: 0; /* Remove margin on smaller screens */
-    margin-top: 10px; /* Adjust space between resume button and navbar links */
-    font-size: 12px; /* Slightly smaller font size for smaller screens */
+    margin-left: 0; /* Remove horizontal margin */
+    margin-top: 10px; /* Space between button and nav links */
+    font-size: 12px; /* Smaller font size for compact appearance */
   }
 }
 
-/* Media Query for Larger Screens (Laptop/Tablet) */
+/* Media Query for Tablets and Larger Screens */
 @media (min-width: 768px) {
   .container {
     flex-direction: row; /* Align items horizontally */
@@ -104,17 +104,18 @@
   }
 
   .nav-links {
-    flex-direction: row; /* Align navbar links horizontally */
-    gap: 20px; /* Maintain consistent gap */
+    flex-direction: row; /* Maintain horizontal layout for nav links */
+    gap: 20px; /* Consistent spacing */
   }
 
   .btn-download-cv {
-    margin-left: 20px; /* Adjust space between navbar links and button */
-    font-size: 14px; /* Standard font size for larger screens */
+    margin-left: 20px; /* Space between button and links */
+    font-size: 14px; /* Standard font size */
     margin-top: 0; /* Remove top margin */
   }
 }
-html {
-  scroll-behavior: smooth; /* Enables smooth scrolling across the page */
-}
 
+/* General Smooth Scrolling for Links */
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
