@@ -9,21 +9,23 @@ function Header() {
         <div className="logo">
           <span>Sanskruti</span>
         </div>
-        <div className="actions">
-          <a href={resume} download={resume} className="btn-download-cv">Resume</a>
-        </div>
         <nav className="nav-links">
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
+
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
+        <div className="actions">
+           
+          <a href={resume} download={resume} className="btn-download-cv">Resume</a>
+        </div>
       </div>
     </header>
   );
 }
 
-export default Header;
+export default Header; 
