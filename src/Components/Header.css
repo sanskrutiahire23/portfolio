@@ -110,3 +110,7 @@
     margin-top: 0; /* Remove top margin */
   }
 }
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling across the page */
+}
+
