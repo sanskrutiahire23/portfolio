@@ -12,7 +12,6 @@ const Skills = () => {
     { name: "Tailwind CSS", icon: <SiTailwindcss /> },
     { name: "JavaScript", icon: <FaJs /> },
     { name: "Bootstrap", icon: <FaBootstrap /> },
-     
     { name: "React", icon: <FaReact /> },
     { name: "Flask", icon: <SiFlask /> },
     { name: "Figma", icon: <SiFigma /> },
