@@ -1,7 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import { FaPython, FaCuttlefish, FaHtml5, FaCss3Alt, FaJs, FaBootstrap, FaReact } from "react-icons/fa";
-import { SiDjango, SiTailwindcss, SiFlask, SiFigma, SiAdobexd } from "react-icons/si";
+import { SiTailwindcss, SiFlask, SiFigma, SiAdobexd } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
