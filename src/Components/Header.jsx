@@ -21,11 +21,11 @@ function Header() {
         </nav>
         <div className="actions">
            
-          <a href={resume} download={resume} className="btn-download-cv">Download Resume</a>
+          <a href={resume} download={resume} className="btn-download-cv">Resume</a>
         </div>
       </div>
     </header>
   );
 }
 
-export default Header;
+export default Header; 
