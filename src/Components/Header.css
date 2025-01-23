@@ -1,13 +1,9 @@
 .header {
   background-color: #12171e;
-<<<<<<< HEAD
   padding: 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-=======
-  padding: 10px 0; /* Compact vertical padding */
->>>>>>> 242875f003d73f63a6cd80123b1d7aaf078bfd66
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,53 +16,26 @@
   align-items: center;
   max-width: 1200px;
   width: 90%;
-<<<<<<< HEAD
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: #64ffda;
-=======
-  margin: 0 auto;
-}
-
-.logo {
-  font-size: 20px; /* Compact font size for logo */
-  font-weight: bold;
-  color: #64ffda;
-  margin-bottom: 0; /* Ensure no extra spacing below */
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Compact spacing between nav links */
-  margin-top: 0; /* Avoid unnecessary top margin */
->>>>>>> 242875f003d73f63a6cd80123b1d7aaf078bfd66
 }
 
 .nav-links ul {
   list-style: none;
   display: flex;
-<<<<<<< HEAD
-  gap: 70px;
-=======
-  gap: 20px; /* Compact spacing for horizontal links */
+  gap: 50px;
   margin: 0;
   padding: 0;
->>>>>>> 242875f003d73f63a6cd80123b1d7aaf078bfd66
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
-<<<<<<< HEAD
   font-size: 16px;
-=======
-  font-size: 14px; /* Compact font size for links */
-  transition: color 0.3s ease;
->>>>>>> 242875f003d73f63a6cd80123b1d7aaf078bfd66
 }
 
 .nav-links a:hover {
@@ -76,36 +45,22 @@
 .actions {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
   gap: 15px;
 }
 
 .btn-download-cv {
   padding: 8px 16px;
-=======
-}
-
-.btn-download-cv {
-  padding: 6px 12px; /* Compact padding for the button */
->>>>>>> 242875f003d73f63a6cd80123b1d7aaf078bfd66
   background: #64ffda;
   color: #0a192f;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-<<<<<<< HEAD
-=======
-  margin-left: 20px; /* Space between links and button */
-  white-space: nowrap;
-  font-size: 14px; /* Compact font size */
->>>>>>> 242875f003d73f63a6cd80123b1d7aaf078bfd66
 }
 
 .btn-download-cv:hover {
   background: #52e0c4;
 }
 
-<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
 }
@@ -113,18 +68,24 @@ html {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav-links ul {
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Adjust gap for smaller screens */
+  }
+
+  .nav-links a {
+    font-size: 14px;
   }
 
   .actions {
-    margin-top: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -133,8 +94,13 @@ html {
     font-size: 20px;
   }
 
+  .nav-links ul {
+    gap: 20px; /* Adjust gap for smaller screens */
+    padding: 0;
+  }
+
   .nav-links a {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .btn-download-cv {
@@ -142,54 +108,3 @@ html {
     font-size: 14px;
   }
 }
-=======
-/* Media Query for Small Screens (Mobile) */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items */
-    text-align: center;
-  }
-
-  .logo {
-    margin-bottom: 10px; /* Add minimal spacing below logo */
-    font-size: 18px; /* Slightly smaller logo for small screens */
-  }
-
-  .nav-links {
-    flex-direction: column; /* Stack nav links vertically */
-    gap: 15px; /* Compact spacing for stacked nav links */
-    margin-top: 10px; /* Small gap above nav links */
-  }
-
-  .btn-download-cv {
-    margin-left: 0; /* Remove horizontal margin */
-    margin-top: 10px; /* Space between button and nav links */
-    font-size: 12px; /* Smaller font size for compact appearance */
-  }
-}
-
-/* Media Query for Tablets and Larger Screens */
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row; /* Align items horizontally */
-    justify-content: space-between;
-  }
-
-  .nav-links {
-    flex-direction: row; /* Maintain horizontal layout for nav links */
-    gap: 20px; /* Consistent spacing */
-  }
-
-  .btn-download-cv {
-    margin-left: 20px; /* Space between button and links */
-    font-size: 14px; /* Standard font size */
-    margin-top: 0; /* Remove top margin */
-  }
-}
-
-/* General Smooth Scrolling for Links */
-html {
-  scroll-behavior: smooth; /* Enable smooth scrolling */
-}
->>>>>>> 242875f003d73f63a6cd80123b1d7aaf078bfd66

@@ -54,3 +54,39 @@
     text-align: justify;
     color: #e0e0e0;
   }
+  /* Responsive Styles */
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 40px 15px;
+  }
+
+  .projects-grid {
+    gap: 20px; /* Reduce the gap between cards */
+  }
+
+  .project-card {
+    margin: 0 auto; /* Center the cards on smaller screens */
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+
+  .project-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+  }
+}
